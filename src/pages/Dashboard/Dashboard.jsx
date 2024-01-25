@@ -111,7 +111,7 @@ function Dashboard() {
             </div>
             
             
-        </div>
+        </div> 
 
         <div className="main-dashboard-section">
             <header className='dashboard-header'>
