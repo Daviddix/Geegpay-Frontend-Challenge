@@ -1,0 +1,128 @@
+/* header  */
+
+.main-dashboard-section .dashboard-header{
+    border-bottom: 1px solid #EBECF2;
+    background: #FAFAFA;
+    padding: 1rem 0;
+}
+
+.dashboard-header .dashboard-header-inner{
+    width:90vw;
+    max-width:70rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-header-inner .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .5rem;
+}
+
+.right > button{
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    padding: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.769px solid #DADDDD;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.dashboard-header-inner .profile-pill{
+    display: flex;
+    width: 6.9rem;
+    height: 4rem;
+    padding: 0.6rem 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 28px;
+    border: 1px solid #DADDDD;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+}
+
+.profile-pill img.profile-picture{
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+}
+
+form, .right .date, .left-side h2, .profile-pill .name{
+    display:none;
+}
+
+.title-mobile{
+    width: 90vw;
+    margin: 1rem auto;
+}
+
+@media screen and (min-width:1000px) {
+    form, .date, .left-side h2, .profile-pill .name{
+        display:block;
+    }
+    
+    .dashboard-header .dashboard-header-inner{
+        width: 96%;
+        max-width: 96%;
+    }
+
+    .dashboard-header-inner .right{
+        column-gap: 2rem;
+    }
+
+    .dashboard-header-inner .profile-pill{
+        display: flex;
+        width: auto;
+        padding: 0.6rem 0.8rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    .left-side > img,
+    .right .search-mobile
+    {
+        display:none;
+    }
+
+    .right .date{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: .5rem;
+    }
+
+    .right form{
+        border-radius: 2.4rem;
+        border: 1px solid #DADDDD;
+        background: white;
+        display: flex;
+        height: 4rem;
+        width:30rem;
+        padding-left: 1.6rem;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .right form input{
+        flex: .95;
+        height:70%;
+        border:none;
+    }
+}
