@@ -1,0 +1,169 @@
+*, *::before, *::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Plus Jakarta Sans;
+  src: url("./assets/fonts/FontsFree-Net-PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-V.ttf");
+}
+
+html{
+  font-size: 62.5%;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root{
+  --bg-color: #fafafa;
+}
+
+.container{
+  border-radius: 1.4rem;
+  border: 1px solid #EDF2F7;
+  background: #FFF;
+  padding:1.5rem 1.8rem;
+}
+
+.body-text-plus-jakarta-sans-semiBold-18{
+  color: #26282C;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.4rem; 
+}
+
+.heading-text-plus-jakarta-sans-semiBold-20{
+  color: #26282C;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.6rem; 
+}
+
+.body-text-inter-medium{
+  color: #26282C;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem; 
+}
+
+.pill-text-heading{
+  color: #26282C;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pill-text-sub-heading{
+  color: #787486;
+  /* text-align: right; */
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.body-text-plus-jakarta-sans-medium-14{
+  color: #3A3F51;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem; 
+}
+
+.body-text-plus-jakarta-sans-medium-12{
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem; 
+}
+
+.body-text-plus-jakarta-sans-regular-12{
+  color: #3A3F51;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.body-text-plus-jakarta-sans-semiBold-12{
+  color: var(--Neutral-600, #525252);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4rem; 
+}
+
+.body-text-plus-jakarta-sans-semiBold-14{
+  color: var(--Neutral-600, #525252);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.body-text-plus-jakarta-sans-medium-16{
+  color: var(--60, #9CA4AB);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem; 
+}
+
+.body-text-plus-jakarta-sans-regular-16{
+  color: var(--Neutral-500, #737373);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem; 
+}
+
+.body-text-plus-jakarta-sans-medium-18{
+  color: #34CAA5;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.heading-text-plus-jakarta-sans-semiBold-24{
+  color: #3A3F51;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.2rem; 
+}
+
+.body-text-plus-jakarta-sans-regular-18{
+  color:  #525252;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; 
+}
