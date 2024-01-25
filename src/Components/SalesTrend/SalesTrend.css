@@ -25,6 +25,7 @@
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    cursor: pointer;
 }
 
 .sales-trend-graph{

@@ -16,15 +16,18 @@ import calendarIcon from "../../assets/icons/calendar-icon.svg"
 import "./Sidebar.css"
 
 
-function Sidebar() {
+function Sidebar({showSidebar, setShowSidebar}) {
   return (
-    <div className="sidebar">
+    <div className={showSidebar? "sidebar show" : "sidebar"}>
             <div className="sidebar-inner">
                 <div className="sidebar-inner-header">
                 <img src={logoIcon} alt="logo" className="logo" />
 
                 <button>
-                    <img src={closeIcon} alt="close sidebar icon" />
+                    <img 
+                    onClick={()=>{
+                        setShowSidebar(false)
+                    }}src={closeIcon} alt="close sidebar icon" />
                 </button>
 
                 </div>

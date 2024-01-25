@@ -10,17 +10,20 @@ import SalesTrend from "../../Components/SalesTrend/SalesTrend"
 import LastOrders from "../../Components/LastOrders/LastOrders"
 import TopPlatform from "../../Components/TopPlatform/TopPlatform"
 import DashboardHeader from "../../Components/DashboardHeader/DashboardHeader"
+import { useState } from "react"
 
 function Dashboard() {
+    const [showSidebar, setShowSidebar] = useState(true)
+
   return (
     <main className="dashboard-layout">
-        <Sidebar />
+        <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
 
         <div className="main-dashboard-section">
-            <DashboardHeader />
+            <DashboardHeader setShowSidebar={setShowSidebar} />
 
             <div className="main-dashboard-inner">
-            <h1 className="title-mobile .heading-text-plus-jakarta-sans-semiBold-20">
+            <h1 className="title-mobile heading-text-plus-jakarta-sans-semiBold-20">
                 Dashboard
             </h1>
 

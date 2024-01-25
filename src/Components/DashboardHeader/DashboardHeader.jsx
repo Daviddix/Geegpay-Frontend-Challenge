@@ -7,14 +7,18 @@ import downIcon from "../../assets/icons/down-icon.svg"
 
 import "./DashboardHeader.css"
 
-function DashboardHeader() {
+function DashboardHeader({setShowSidebar}) {
   return (
     <header className='dashboard-header'>
                 <div className="dashboard-header-inner">
                 <div className="left-side">
                     <h2 className="heading-text-plus-jakarta-sans-semiBold-20">Dashboard</h2>
 
-                    <img src={menuIcon} alt="menu icon" />
+                    <img
+                    onClick={()=>{
+                        setShowSidebar(true)
+                    }}
+                    src={menuIcon} alt="menu icon" />
                 </div>
 
                 <div className="right">

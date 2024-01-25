@@ -81,6 +81,6 @@
     .main-dashboard-section .grouped-components{
         width:100%;
         margin: 0;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     }
 }
