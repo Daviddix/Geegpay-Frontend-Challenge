@@ -42,7 +42,7 @@ function SalesTrend() {
                           {mappedGraphValues}
                         </div>
 
-                        <div className="lines">
+                        {/* <div className="lines">
                         <svg width="697" height="1" viewBox="0 0 697 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0.5H696.413H1Z" fill="white"/>
                         <path d="M1 0.5H696.413" stroke="#EAEAEA" stroke-linecap="round" stroke-dasharray="4 4"/>
@@ -83,7 +83,7 @@ function SalesTrend() {
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0.5H696.413H1Z" fill="white"/>
                         <path d="M1 0.5H696.413" stroke="#EAEAEA" stroke-linecap="round" stroke-dasharray="4 4"/>
                         </svg>
-                        </div>
+                        </div> */}
                         
                         <div className="x-axis">
                             <p className="body-text-plus-jakarta-sans-semiBold-14">Jan</p>

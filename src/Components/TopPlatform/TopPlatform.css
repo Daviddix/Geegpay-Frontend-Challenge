@@ -1,4 +1,3 @@
-/* platform  */
 .platform .platform-header{
     display: flex;
     align-items: center;
@@ -58,7 +57,7 @@
 }
 
 @media screen and (min-width:1000px) {
-    /* platform */
+
     .single-platform h2{
         font-size: 1.4rem;
     }

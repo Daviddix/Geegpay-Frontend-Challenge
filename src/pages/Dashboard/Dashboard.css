@@ -1,6 +1,7 @@
 .dashboard-layout{
     background-color: var(--bg-color);
     min-height: 100vh;
+    padding: 0 0 2rem 0;
 }
 
 
@@ -62,6 +63,7 @@
     .dashboard-layout{
         display: grid;
         grid-template-columns: 6rem 1fr;
+        padding: 0;
     }
 
     .title-mobile{

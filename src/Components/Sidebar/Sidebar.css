@@ -19,7 +19,7 @@
     left:0%;
 }
 
-.dashboard-layout .sidebar::after{
+.dashboard-layout .sidebar.show::after{
     content: "";
     position: absolute;
     width:20vw;
@@ -27,6 +27,15 @@
     background-color: rgba(0, 0, 0, 0.459);
     top:0;
     left:100%;
+    animation: show 1s ease 1s forwards;
+    -webkit-animation: show 1s ease 1s forwards;
+    opacity: 0;
+}
+
+@keyframes show {
+    to{
+        opacity: 1;
+    }
 }
 
 .dashboard-layout .sidebar-inner{
