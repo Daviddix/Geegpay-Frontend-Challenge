@@ -127,8 +127,8 @@
     /* sidebar */
     .dashboard-layout .sidebar{
         display: block;
-        max-height: 100vh;
-        min-height: 100vh;
+        min-height: auto;
+        max-height: 87rem;
         width:auto;
         max-width: 60rem;
         position: sticky;
@@ -145,7 +145,7 @@
         padding:1rem 0;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 95%;
     }    
 
     .sidebar-inner > .upper-sidebar-options{

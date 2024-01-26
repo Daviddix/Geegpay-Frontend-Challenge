@@ -4,6 +4,9 @@
     padding: 0 0 2rem 0;
 }
 
+body{
+    background-color: var(--bg-color);
+}
 
 .main-dashboard-section .main-dashboard-inner{
     width:90vw;
@@ -64,6 +67,8 @@
         display: grid;
         grid-template-columns: 6rem 1fr;
         padding: 0;
+        max-width: 160rem;
+        margin: auto;
     }
 
     .title-mobile{
