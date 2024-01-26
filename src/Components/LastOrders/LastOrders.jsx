@@ -8,6 +8,65 @@ import personFive from "../../assets/images/person-5.png"
 import "./LastOrders.css"
 
 function LastOrders() {
+    const orderData = [{
+        profilePicture : personOne,
+        name : "Marcus Bargson",
+        amount : "$40,000",
+        date: "Nov 18, 2023",
+        status: "Paid"
+    },
+    {
+        profilePicture : personTwo,
+        name : "Jaydon Vaccaro",
+        amount : "$150,000",
+        date: "Nov 15, 2023",
+        status: "Refund"
+    },
+    {
+        profilePicture : personThree,
+        name : "Corey Schleifer",
+        date: "Nov 14, 2023",
+        amount : "$87,000",
+        status: "Paid"
+    },
+    {
+        profilePicture : personFour,
+        name : "Cooper Press",
+        date: "Nov 14, 2023",
+        amount: "$100,000",
+        status: "Refund"
+    },
+    {
+        profilePicture : personFive,
+        name : "Phillip Lubin",
+        date: "Nov 13, 2023",
+        amount: "$78,000",
+        status: "Paid"
+    }]
+
+    const mappedOrderData = orderData.map(({profilePicture, amount, date, name, status})=>{
+        return <div className="order-table-row">
+        <div className="image-and-name">
+            <img src={profilePicture} alt="profile picture" />
+
+            <h2 className="body-text-plus-jakarta-sans-medium-16">{name}</h2>
+        </div>
+
+        <p className="order-date body-text-plus-jakarta-sans-regular-16">{date}</p>
+
+        <p className="amount body-text-plus-jakarta-sans-medium-16">{amount}</p>
+
+        <p 
+        className={
+            `${status == "Paid"? "status-good body-text-plus-jakarta-sans-regular-16" : "status-bad body-text-plus-jakarta-sans-regular-16"}`}>{status}</p>
+
+        <div className="invoice">
+            <img src={fileDownloadIcon} alt="file icon" />
+            <p className="body-text-plus-jakarta-sans-semiBold-14">View</p>
+        </div>
+    </div>
+    })
+    
   return (
     <div className="order container">
                 <div className="order-header">
@@ -26,100 +85,7 @@ function LastOrders() {
                             <p className="body-text-plus-jakarta-sans-medium-16">Invoice</p>
                         </div>
 
-                        <div className="order-table-row">
-                            <div className="image-and-name">
-                                <img src={personOne} alt="profile picture" />
-
-                                <h2 className="body-text-plus-jakarta-sans-medium-16">Marcus Bargson</h2>
-                            </div>
-
-                            <p className="order-date body-text-plus-jakarta-sans-regular-16">Nov 18, 2023</p>
-
-                            <p className="amount body-text-plus-jakarta-sans-medium-16">$40,000</p>
-
-                            <p className="status-good body-text-plus-jakarta-sans-regular-16">Paid</p>
-
-                            <div className="invoice">
-                                <img src={fileDownloadIcon} alt="" />
-                                <p className="body-text-plus-jakarta-sans-semiBold-14">View</p>
-                            </div>
-                        </div>
-
-                        <div className="order-table-row">
-                            <div className="image-and-name">
-                                <img src={personTwo} alt="profile picture" />
-
-                                <h2 className="body-text-plus-jakarta-sans-medium-16">Jaydon Vaccaro</h2>
-                            </div>
-
-                            <p className="order-date body-text-plus-jakarta-sans-regular-16">Nov 15, 2023</p>
-
-                            <p className="amount body-text-plus-jakarta-sans-medium-16">$150,000</p>
-
-                            <p className="status-bad body-text-plus-jakarta-sans-regular-16">Refund</p>
-
-                            <div className="invoice">
-                                <img src={fileDownloadIcon} alt="" />
-                                <p className="body-text-plus-jakarta-sans-semiBold-14">View</p>
-                            </div>
-                        </div>
-
-                        <div className="order-table-row">
-                            <div className="image-and-name">
-                                <img src={personThree} alt="profile picture" />
-
-                                <h2 className="body-text-plus-jakarta-sans-medium-16">Corey Schleifer</h2>
-                            </div>
-
-                            <p className="order-date body-text-plus-jakarta-sans-regular-16">Nov 14, 2023</p>
-
-                            <p className="amount body-text-plus-jakarta-sans-medium-16">$87,000</p>
-
-                            <p className="status-good body-text-plus-jakarta-sans-regular-16">Paid</p>
-
-                            <div className="invoice">
-                                <img src={fileDownloadIcon} alt="" />
-                                <p className="body-text-plus-jakarta-sans-semiBold-14">View</p>
-                            </div>
-                        </div>
-
-                        <div className="order-table-row">
-                            <div className="image-and-name">
-                                <img src={personFour} alt="profile picture" />
-
-                                <h2 className="body-text-plus-jakarta-sans-medium-16">Cooper Press</h2>
-                            </div>
-
-                            <p className="order-date body-text-plus-jakarta-sans-regular-16">Nov 14, 2023</p>
-
-                            <p className="amount body-text-plus-jakarta-sans-medium-16">$100,000</p>
-
-                            <p className="status-bad body-text-plus-jakarta-sans-regular-16">Refund</p>
-
-                            <div className="invoice">
-                                <img src={fileDownloadIcon} alt="" />
-                                <p className="body-text-plus-jakarta-sans-semiBold-14">View</p>
-                            </div>
-                        </div>
-
-                        <div className="order-table-row">
-                            <div className="image-and-name">
-                                <img src={personFive} alt="profile picture" />
-
-                                <h2 className="body-text-plus-jakarta-sans-medium-16">Phillip Lubin</h2>
-                            </div>
-
-                            <p className="order-date body-text-plus-jakarta-sans-regular-16">Nov 13, 2023</p>
-
-                            <p className="amount body-text-plus-jakarta-sans-medium-16">$78,000</p>
-
-                            <p className="status-good body-text-plus-jakarta-sans-regular-16">Paid</p>
-
-                            <div className="invoice">
-                                <img src={fileDownloadIcon} alt="" />
-                                <p className="body-text-plus-jakarta-sans-semiBold-14">View</p>
-                            </div>
-                        </div>
+                       {mappedOrderData}
                     </div>
                 </div>
             </div>
