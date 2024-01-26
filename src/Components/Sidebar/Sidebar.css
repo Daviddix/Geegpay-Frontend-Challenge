@@ -127,8 +127,8 @@
     /* sidebar */
     .dashboard-layout .sidebar{
         display: block;
-        min-height: auto;
-        max-height: 87rem;
+        min-height: 100vh;
+        max-height: 100vh;
         width:auto;
         max-width: 60rem;
         position: sticky;
