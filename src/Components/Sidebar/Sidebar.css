@@ -135,6 +135,7 @@
         background-color: #FAFAFA;
         overflow: hidden;
         z-index: 2;
+        border-inline: 1px solid #EBECF2;
     }
 
     .dashboard-layout .sidebar::after{
