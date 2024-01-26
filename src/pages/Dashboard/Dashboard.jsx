@@ -13,7 +13,7 @@ import DashboardHeader from "../../Components/DashboardHeader/DashboardHeader"
 import { useState } from "react"
 
 function Dashboard() {
-    const [showSidebar, setShowSidebar] = useState(true)
+    const [showSidebar, setShowSidebar] = useState(false)
 
   return (
     <main className="dashboard-layout">

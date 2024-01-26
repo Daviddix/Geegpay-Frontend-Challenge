@@ -111,6 +111,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    background-color: transparent;
 }
 
 .theme-container button.active{
