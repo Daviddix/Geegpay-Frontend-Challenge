@@ -15,7 +15,8 @@
 }
 
 .order-table .order-table-inner{
-    width: 60rem;
+    min-width: 60rem;
+    width:100%;
 }
 
 .order-table-inner .order-table-header{
